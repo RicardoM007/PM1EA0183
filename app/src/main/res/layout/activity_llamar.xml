@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:background="@color/background">
+    <com.google.android.material.button.MaterialButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnVolver"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atrás"
+        android:textAllCaps="false"
+        app:strokeColor="@color/primary" />
+    <ImageView
+        android:id="@+id/fotoLlamar"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_photo"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:scaleType="centerCrop"
+        android:contentDescription="Fotografía del contacto" />
+    <TextView
+        android:id="@+id/nombreLlamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary" />
+    <TextView
+        android:id="@+id/telefonoLlamar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textColor="@color/text_secondary" />
+    <Space android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <com.google.android.material.button.MaterialButton
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/btnIniciarLlamada"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:text="Llamar"
+        android:textAllCaps="false"
+        android:layout_marginBottom="32dp"
+        app:icon="@android:drawable/ic_menu_call"
+        app:iconGravity="textStart"
+        app:backgroundTint="@color/primary" />
+</LinearLayout>
